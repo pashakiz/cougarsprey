@@ -1,0 +1,143 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  font-family: $font_family;
+  font-weight: 800;
+  font-size: 13px;
+  text-align: center;
+  &.logo_main {
+    flex-direction: column;
+    justify-content: center;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  }
+}
+.logo__text1 {
+  background-color: $btn_bg_color;
+  border-radius: 50%;
+  padding: 7px 15px;
+  margin-right: 12px;
+  color: #fff;
+}
+.logo__text2 {
+  color: #000;
+}
+
+.logo_main {
+  margin: 180px 20px 40px;
+  @media (min-width: 768px) {
+    & {
+      margin: 40px 20px 40px 40px;
+    }
+  }
+  @media (min-width: 992px) {
+    & {
+      margin: 90px 20px 90px 90px;
+    }
+  }
+  @media (min-width: 1200px) {
+    & {
+      margin: 90px 20px 90px 90px;
+    }
+  }
+  .logo__img {
+    background-image: url('../img/icons/logo-white.svg');
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+      & {
+        background-image: url('../img/icons/logo-red.svg');
+        margin-bottom: 0;
+      }
+    }
+  }
+  .logo__text {
+    color: #fff;
+    font-size: 15px;
+    @media (min-width: 768px) {
+      & {
+        color: $logo_main_color;
+        font-size: 18px;
+      }
+    }
+    @media (min-width: 992px) {
+      & {
+        color: $logo_main_color;
+        font-size: 21px;
+      }
+    }
+  }
+}
+
+.logo_header {
+  justify-content: flex-start;
+  //align-items: center;
+  flex-direction: row;
+  .logo__img {
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/icons/logo-white.svg');
+    margin-right: 12px;
+    @media (min-width: 768px) {
+      & {
+        width: 43px;
+        height: 43px;
+        margin-right: 20px;
+        background-image: url('../img/icons/logo-red.svg');
+      }
+    }
+  }
+  .logo__text {
+    color: #fff;
+    font-size: 13px;
+    text-align: left;
+    @media (min-width: 768px) {
+      & {
+        font-size: 21px;
+        color: $logo_main_color;
+      }
+    }
+  }
+}
+
+.logo_footer {
+  margin-bottom: 10px;
+  @media (min-width: 768px) {
+    & {
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: 992px) {
+    & {
+      margin-right: 15px;
+    }
+  }
+  .logo__img {
+    background-image: url('../img/icons/logo-gray.svg');
+    margin-bottom: 15px;
+    @media (min-width: 768px) {
+      & {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .logo__text {
+    color: $footer_text_color;
+    font-size: 14px;
+    text-align: center;
+    @media (min-width: 768px) {
+      & {
+        text-align: left;
+        font-size: 15px;
+      }
+    }
+    @media (min-width: 992px) {
+      & {
+        font-size: 21px;
+      }
+    }
+  }
+}
