@@ -10,9 +10,6 @@ body {
       font-size: $font_size;
     }
   }
-  &.body_main {
-    background-color: #fff;
-  }
 }
 .container {
   @media (min-width: 1500px) {
