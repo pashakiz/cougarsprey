@@ -37,28 +37,28 @@ $textarea_border_radius:    10px;
 
 //Custom Checkbox
 $checkbox_xs_padding_left:      2rem;
-$checkbox_xs_width:             1.5rem;
-$checkbox_xs_height:            1.5rem;
+$checkbox_xs_width:             1.25rem;
+$checkbox_xs_height:            1.25rem;
 $checkbox_xs_left:              -2rem;
-$checkbox_xs_top:               -0.2rem;
+$checkbox_xs_top:               0;
 
-$checkbox_padding_left:         2.75rem;
-$checkbox_width:                1.875rem;
-$checkbox_height:               1.875rem;
+$checkbox_padding_left:         2.6rem;
+$checkbox_width:                1.5rem;
+$checkbox_height:               1.5rem;
 $checkbox_left:                 -2.6rem;
 $checkbox_top:                  -0.2rem;
 
-$checkbox_txt_family:           "ActaDisplay", sans-serif;
-$checkbox_txt_xs_size:          15px;
-$checkbox_txt_size:             20px;
-$checkbox_txt_xs_lh:            20px;
-$checkbox_txt_lh:               27px;
-$checkbox_bg_color:             #3D3A3D;
-$checkbox_checked_bg_color:     $checkbox_bg_color;
-$checkbox_border:               1px solid $checkbox_bg_color;
+$checkbox_txt_family:           $font_family2;
+$checkbox_txt_xs_size:          14px;
+$checkbox_txt_size:             17px;
+$checkbox_txt_xs_lh:            13px;
+$checkbox_txt_lh:               13px;
+$checkbox_bg_color:             transparent;
+$checkbox_checked_bg_color:     $logo_main_color;
+$checkbox_border:               1px solid #DFDFDF;
 $checkbox_checked_border_color: $checkbox_bg_color;
-$checkbox_active_bg_color:      #514e51;
-$checkbox_bg_icon:              "data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 64 64' enable-background='new 0 0 64 64' xml:space='preserve'%3E%3Cg%3E%3Cpath fill='%23fa4f4f' d='M23.5,54.9c0,0-0.1,0-0.1,0c-1.4,0-2.8-0.6-3.7-1.7l-18.3-20c-1.9-2.1-1.8-5.4,0.3-7.4 c2.1-2,5.4-1.8,7.4,0.3l14.6,16l31.4-31.4c2-2,5.3-2,7.4,0c2,2,2,5.3,0,7.4L27.2,53.4C26.2,54.3,24.9,54.9,23.5,54.9z'/%3E%3C/g%3E%3C/svg%3E%0A";
+$checkbox_active_bg_color:      #D94343;
+$checkbox_bg_icon:              "data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 64 64' enable-background='new 0 0 64 64' xml:space='preserve'%3E%3Cg%3E%3Cpath fill='%23ffffff' d='M23.5,54.9c0,0-0.1,0-0.1,0c-1.4,0-2.8-0.6-3.7-1.7l-18.3-20c-1.9-2.1-1.8-5.4,0.3-7.4 c2.1-2,5.4-1.8,7.4,0.3l14.6,16l31.4-31.4c2-2,5.3-2,7.4,0c2,2,2,5.3,0,7.4L27.2,53.4C26.2,54.3,24.9,54.9,23.5,54.9z'/%3E%3C/g%3E%3C/svg%3E%0A";
 
 //Custom RadioButton
 $radio_xs_padding_left:      2rem;
