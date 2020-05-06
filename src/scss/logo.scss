@@ -18,7 +18,7 @@
   }
 }
 .logo__text1 {
-  background-color: $btn_bg_color;
+  background-color: $logo_main_color;
   border-radius: 500px;
   padding: 7px 15px;
   margin-right: 12px;
@@ -78,8 +78,6 @@
   @media (min-width: 768px) {
     font-size: 12px;
   }
-  .logo__text1 {}
-  .logo__text2 {}
 }
 
 .logo_footer {

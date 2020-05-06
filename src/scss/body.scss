@@ -24,14 +24,15 @@ body {
   }
 }
 .content {
-  @media (min-width: 992px) {
-    padding: 30px 0 0;
+  padding: 30px 0 55px;
+  @media (min-width: 768px) {
+    padding: 30px 0 150px;
   }
   @media (min-width: 1200px) {
-    padding: 74px 48px 20px;
+    padding: 74px 48px 150px;
   }
   @media (min-width: 1920px) {
-    padding: 74px 148px 20px;
+    padding: 74px 148px 150px;
   }
 }
 h1 {
@@ -52,17 +53,18 @@ h1 {
   }
 }
 h2 {
-  font-family: "ActaDisplay", sans-serif;
-  font-weight: 300;
-  font-size: 34px;
-  line-height: 50px;
-  color: #fff;
+  font-family: $font_family2;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 45px;
+  color: #000;
   text-transform: uppercase;
   margin-bottom: 43px;
+  text-align: center;
   @media (min-width: 768px) {
     & {
-      font-size: 55px;
-      line-height: 80px;
+      font-size: 60px;
+      line-height: 90px;
       margin-bottom: 88px;
     }
   }
@@ -74,16 +76,17 @@ h2 {
   }
 }
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: $font_family2;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 24px;
-  color: #fff;
+  color: #000;
   margin-top: 40px;
   margin-bottom: 35px;
+  text-transform: uppercase;
   @media (min-width: 768px) {
     & {
-      font-size: 22px;
+      font-size: 20px;
       margin-top: 95px;
     }
   }
@@ -92,18 +95,15 @@ h3 {
   &:before {
     content: '';
     display: block;
-    width: 30px;
-    height: 1px;
-    border-top: 3px solid $logo_main_color;
-    margin-bottom: 20px;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: $logo_main_color;
+    margin: 0 auto 24px;
     @media (min-width: 768px) {
-      width: 60px;
-    }
-  }
-  &.title-mark_center:before {
-    @media (min-width: 768px) {
-      margin-left: auto;
-      margin-right: auto;
+      width: 13px;
+      height: 13px;
+      margin: 0 auto 39px;
     }
   }
 }

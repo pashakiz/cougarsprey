@@ -1,11 +1,11 @@
 $container-xxl:             1260px;
 $container-xxxl:            1374px;
-$body_bg_color:             #fff;
-$logo_main_color:           #F85757;
-$btn_bg_color:              #FF0632;                      /*+*/
+$body_bg_color:             #fff;                         /*+*/
+$logo_main_color:           #FF0632;                      /*+*/
+$btn_bg_color:              $logo_main_color;             /*+*/
 $btn_hover_bg_color:        #D94343;
 $font_color:                #141111;                      /*+*/
-$bg_dark_1:                 #010101;
+$bg_dark_1:                 #EEEEEE;                      /*+*/
 $font_family:               "SofiaPro", sans-serif;       /*+*/
 $font_weight:               300;                          /*+*/
 $font_size:                 20px;                         /*+*/
@@ -13,7 +13,7 @@ $font_size_mobile:          15px;                         /*+*/
 $body_mb:                   0;                            /*+*/
 $body_mb_mob:               0;                            /*+*/
 $font_family2:              "Montserrat", sans-serif;     /*+*/
-$link_txt_family:           "ActaDisplay", sans-serif;
+$link_txt_family:           $font_family;                 /*+*/
 $link_color:                $btn_bg_color;
 $link_hover_color:          #B44D4D;
 $link2_color:               #514e51;
