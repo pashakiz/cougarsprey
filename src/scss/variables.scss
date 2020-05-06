@@ -1,20 +1,18 @@
 $container-xxl:             1260px;
 $container-xxxl:            1374px;
-$footer_text_color:         #737373;
-$footer_text_color_hover:   #bebebe;
-$body_bg_color:             #141111;
+$body_bg_color:             #fff;
 $logo_main_color:           #F85757;
-$btn_bg_color:              #FF0632;                  /*+*/
+$btn_bg_color:              #FF0632;                      /*+*/
 $btn_hover_bg_color:        #D94343;
-$font_color:                #B3B3B3;
+$font_color:                #141111;                      /*+*/
 $bg_dark_1:                 #010101;
-$font_family:               "Montserrat", sans-serif;
-$font_weight:               400;
-$font_size:                 18px;
-$font_size_mobile:          14px;
-$body_mb:                   150px;
-$body_mb_mob:               80px;
-$font_family2:              "ActaDisplay", sans-serif;
+$font_family:               "SofiaPro", sans-serif;       /*+*/
+$font_weight:               300;                          /*+*/
+$font_size:                 20px;                         /*+*/
+$font_size_mobile:          15px;                         /*+*/
+$body_mb:                   0;                            /*+*/
+$body_mb_mob:               0;                            /*+*/
+$font_family2:              "Montserrat", sans-serif;     /*+*/
 $link_txt_family:           "ActaDisplay", sans-serif;
 $link_color:                $btn_bg_color;
 $link_hover_color:          #B44D4D;
@@ -22,6 +20,10 @@ $link2_color:               #514e51;
 $link2_hover_color:         #fff;
 $link3_color:               #fff;
 $link3_hover_color:         #A7A7A7;
+$footer_height:             279px;
+$footer_height_mob:         313px;
+$footer_text_color:         $font_color;
+$footer_text_color_hover:   $footer_text_color;
 
 //Form
 $input_bg:                  #3D3A3D;

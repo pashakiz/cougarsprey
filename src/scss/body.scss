@@ -222,7 +222,7 @@ a {
   position: relative;
   min-height: 100%;
   body {
-    margin-bottom: $body_mb_mob + 396px;
+    margin-bottom: $body_mb_mob + $footer_height_mob;
     .main {
       //padding-top: 60px;
     }
@@ -230,30 +230,14 @@ a {
       position: absolute;
       bottom: 0;
       width: 100%;
-      height: 396px;
-    }
-    @media (min-width: 576px) {
-      & {
-        margin-bottom: $body_mb_mob + 396px + 55px;
-      }
-      .footer {
-        height: 396px + 55px;
-      }
+      height: $footer_height_mob;
     }
     @media (min-width: 768px) {
       & {
-        margin-bottom: $body_mb + 315px;
+        margin-bottom: $body_mb + $footer_height;
       }
       .footer {
-        height: 315px;
-      }
-    }
-    @media (min-width: 1200px) {
-      & {
-        margin-bottom: $body_mb + 315px + 20px;
-      }
-      .footer {
-        height: 315px + 20px;
+        height: $footer_height;
       }
     }
   }
