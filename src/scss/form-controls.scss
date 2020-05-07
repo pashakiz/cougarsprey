@@ -100,7 +100,7 @@ textarea.form-control {
       width: $checkbox_xs_width;
       height: $checkbox_xs_height;
       background-color: $checkbox_bg_color;
-      border: $checkbox_border !important;
+      border: $checkbox_border;
       outline: none !important;
       border-radius: 1rem;
     }
