@@ -3,7 +3,7 @@ $container-xxxl:            1374px;
 $body_bg_color:             #fff;                         /*+*/
 $logo_main_color:           #FF0632;                      /*+*/
 $btn_bg_color:              $logo_main_color;             /*+*/
-$btn_hover_bg_color:        #D94343;
+$btn_hover_bg_color:        #F01038;
 $font_color:                #141111;                      /*+*/
 $bg_dark_1:                 #EEEEEE;                      /*+*/
 $font_family:               "SofiaPro", sans-serif;       /*+*/
@@ -15,24 +15,24 @@ $body_mb_mob:               0;                            /*+*/
 $font_family2:              "Montserrat", sans-serif;     /*+*/
 $link_txt_family:           $font_family;                 /*+*/
 $link_color:                $btn_bg_color;
-$link_hover_color:          #B44D4D;
-$link2_color:               #514e51;
-$link2_hover_color:         #fff;
-$link3_color:               #fff;
-$link3_hover_color:         #A7A7A7;
+$link_hover_color:          $link_color;
+$link1_color:               #fff;
+$link1_hover_color:         #A7A7A7;
 $footer_height:             279px;
 $footer_height_mob:         313px;
 $footer_text_color:         $font_color;
 $footer_text_color_hover:   $footer_text_color;
 
 //Form
-$input_bg:                  #3D3A3D;
-$input_hover_bg:            #646464;
-$input_txt_family:          "ActaDisplay", sans-serif;
-$input_txt_color:           #fff;
+$input_bg:                  trasparent;
+$input_hover_bg:            #F0F0F0;
+$input_txt_family:          $font_family2;
+$input_txt_color:           $font_color;
 $input_hover_txt_color:     $input_txt_color;
-$input_placeholder_color:   #BBBABB;
-$input_border_radius:       0;
+$input_placeholder_color:   #717070;
+$input_border_color:        #DFDFDF;
+$input_border:              1px solid $input_border_color;
+$input_border_radius:       500px;
 $textarea_border_radius:    10px;
 
 //Custom Checkbox
@@ -51,39 +51,39 @@ $checkbox_top:                  -0.2rem;
 $checkbox_txt_family:           $font_family2;
 $checkbox_txt_xs_size:          14px;
 $checkbox_txt_size:             17px;
-$checkbox_txt_xs_lh:            13px;
-$checkbox_txt_lh:               13px;
+$checkbox_txt_xs_lh:            1;
+$checkbox_txt_lh:               1;
 $checkbox_bg_color:             transparent;
 $checkbox_checked_bg_color:     $logo_main_color;
-$checkbox_border:               1px solid #DFDFDF;
+$checkbox_border:               1px solid $input_border_color;
 $checkbox_checked_border_color: $checkbox_bg_color;
 $checkbox_active_bg_color:      #D94343;
 $checkbox_bg_icon:              "data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 64 64' enable-background='new 0 0 64 64' xml:space='preserve'%3E%3Cg%3E%3Cpath fill='%23ffffff' d='M23.5,54.9c0,0-0.1,0-0.1,0c-1.4,0-2.8-0.6-3.7-1.7l-18.3-20c-1.9-2.1-1.8-5.4,0.3-7.4 c2.1-2,5.4-1.8,7.4,0.3l14.6,16l31.4-31.4c2-2,5.3-2,7.4,0c2,2,2,5.3,0,7.4L27.2,53.4C26.2,54.3,24.9,54.9,23.5,54.9z'/%3E%3C/g%3E%3C/svg%3E%0A";
 
 //Custom RadioButton
 $radio_xs_padding_left:      2rem;
-$radio_xs_width:             1.5rem;
-$radio_xs_height:            1.5rem;
-$radio_xs_left:              -2rem;
-$radio_xs_top:               -0.2rem;
+$radio_xs_width:             1.25rem;
+$radio_xs_height:            1.25rem;
+$radio_xs_left:              -1.95rem;
+$radio_xs_top:               -0;
 
-$radio_padding_left:         2.75rem;
-$radio_width:                1.875rem;
-$radio_height:               1.875rem;
-$radio_left:                 -2.6rem;
+$radio_padding_left:         2.6rem;
+$radio_width:                1.5rem;
+$radio_height:               1.5rem;
+$radio_left:                 -2.45rem;
 $radio_top:                  -0.2rem;
 
-$radio_txt_family:           "ActaDisplay", sans-serif;
-$radio_txt_xs_size:          15px;
-$radio_txt_size:             20px;
-$radio_txt_xs_lh:            20px;
-$radio_txt_lh:               27px;
-$radio_bg_color:             #3D3A3D;
+$radio_txt_family:           $font_family2;
+$radio_txt_xs_size:          14px;
+$radio_txt_size:             17px;
+$radio_txt_xs_lh:            1;
+$radio_txt_lh:               1;
+$radio_bg_color:             transparent;
 $radio_checked_bg_color:     $radio_bg_color;
-$radio_border:               1px solid $radio_bg_color;
-$radio_checked_border_color: $radio_bg_color;
-$radio_active_bg_color:      #514e51;
-$radio_bg_icon:              "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='4' fill='%23FA4F4F'/%3E%3C/svg%3E";
+$radio_border:               1px solid $input_border_color;
+$radio_checked_border_color: $logo_main_color;
+$radio_active_bg_color:      #D94343;
+$radio_bg_icon:              "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23FA4F4F'/%3E%3C/svg%3E";
 
 //Custom Swich
 //Soon...

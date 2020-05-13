@@ -1,32 +1,4 @@
-.header {
-  .notice {
-    display: inline-block;
-    background-color: $btn_bg_color;
-    border-radius: 10px;
-    color: #fff;
-    font-weight: 600;
-    font-size: 13px;
-    padding: 6px 10px;
-    line-height: 1;
-    text-align: center;
-    @media (min-width: 768px) {
-      & {
-        font-size: 15px;
-        padding: 7px 10px;
-      }
-    }
-  }
-  &.expand {
-    .header__row {
-      //background-color: $bg_dark_1;
-      @media (min-width: 768px) {
-        & {
-          //background-color: transparent;
-        }
-      }
-    }
-  }
-}
+.header {}
 .header_page {
   margin-bottom: 27px;
   @media (min-width: 768px) {
@@ -41,51 +13,6 @@
   @media (min-width: 768px) {
     & {
       padding: 51px 51px 0 51px;
-    }
-  }
-}
-
-.header__nav-toggle {
-  color: #000;
-  font-size: 15px;
-  padding-left: 10px;
-  cursor: pointer;
-  &:hover {
-    opacity: 0.75;
-  }
-  @media (min-width: 992px) {
-    font-size: 19px;
-  }
-}
-.header-menu {
-  display: none;
-}
-.header-menu__wrap {
-  padding: 30px 0 0;
-  //background-color: $bg_dark_1;
-  @media (min-width: 768px) {
-    padding: 30px 36px 0;
-  }
-}
-.header-menu__item {
-  padding: 15px 15px 30px;
-  &:hover {
-    opacity: 0.75;
-    text-decoration: none;
-  }
-}
-.header-menu__item-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  color: #000;
-  text-transform: uppercase;
-  text-decoration: none;
-  word-break: break-all;
-  padding-right: 30px;
-  @media (min-width: 768px) {
-    & {
-      font-size: 18px;
     }
   }
 }
@@ -248,7 +175,7 @@
   width: 210px;
   margin: 0 auto 40px;
   text-align: center;
-  font-family: "ActaDisplay", sans-serif;
+  font-family: $font_family;
   font-weight: 300;
   font-size: 34px;
   line-height: 45px;

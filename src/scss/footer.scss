@@ -1,7 +1,7 @@
 .footer {
   background-color: $body_bg_color;
   padding: 70px 0 66px;
-  border-top: 1px solid #EEEEEE;
+  border-top: 1px solid $bg_dark_1;
   @media (min-width: 768px) {
     padding: 80px 0 113px;
   }
