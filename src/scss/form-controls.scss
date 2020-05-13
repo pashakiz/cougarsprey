@@ -46,15 +46,12 @@ body textarea:required:valid {
     opacity: 1;
   }
   @media (min-width: 768px) {
-    padding: 1.1875rem 2.9375rem 1.4375rem;
+    padding: 1.1875rem 1.75rem 1.1875rem;
     font-size: 17px;
   }
 }
 input.form-control {
-  height: 50px;
-  @media (min-width: 768px) {
-    height: 73px;
-  }
+  height: 58px;
 }
 textarea.form-control {
   border-radius: $textarea_border_radius;
