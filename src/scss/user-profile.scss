@@ -76,9 +76,6 @@
     overflow: hidden;
     cursor: pointer;
     margin-bottom: 5%;
-    & + .user-profile-gallery__item {
-      margin-left: 15px;
-    }
   }
   .user-profile-gallery__img {}
 }
