@@ -52,6 +52,12 @@ $(function() {
             items: 1,
             dots:true
         });
+        $('.owl-carousel.user-profile-gallery').owlCarousel({
+            loop:true,
+            autoWidth:true,
+            items: 4,
+            margin: 15
+        });
 
         //gallery on desktop
         $('.user-profile-gallery').on('click', '.user-profile-gallery__img', function(){
