@@ -26,7 +26,7 @@
   background-position: top center;
   background-size: cover;
   overflow: hidden;
-  padding-bottom: 95px;
+  padding-bottom: 145px;
   @media (min-width: 992px) {
     padding-bottom: 0;
   }
@@ -120,18 +120,7 @@
   }
 }
 
-.header__titlebox {
-  margin-bottom: 20px;
-  @media (min-width: 768px) {
-    width: 250px;
-    margin-bottom: 0;
-  }
-  @media (min-width: 992px) {
-    width: 360px;
-  }
-}
-
-.header__form {
+.infobox {
   @media (min-width: 1200px) {
     margin-left: -50px;
   }
@@ -139,63 +128,81 @@
     margin-left: -250px;
   }
 }
+.infobox_main {
+  width: 100%;
+  @media (min-width: 992px) {
+    width: auto;
+  }
+}
 
-.header__inputs {
+.infobox-area {
   @media (min-width: 768px) {
     width: 369px;
     margin: 0 auto;
   }
   @media (min-width: 1200px) {
-    width: 369px;
     margin: 0;
+  }
+  &.main {
+    max-width: 327px;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      width: 327px;
+      margin: 0 auto;
+    }
+    @media (min-width: 992px) {
+      margin: 0;
+      max-width: 340px;
+      width: 340px;
+    }
   }
 }
 
 .header__title {
-  width: 210px;
   margin: 0 auto 40px;
   text-align: center;
-  font-family: $font_family;
-  font-weight: 300;
-  font-size: 34px;
-  line-height: 45px;
+  font-family: $font_family2;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
   color: #fff;
-  &:before {
-    @media (min-width: 768px) {
-      & {
-        content: '';
-        display: block;
-        width: 60px;
-        height: 1px;
-        border-top: 3px solid $logo_main_color;
-        margin-bottom: 20px;
-      }
-    }
-  }
+  letter-spacing: 2px;
+  text-transform: uppercase;
   @media (min-width: 768px) {
-    & {
-      width: auto;
-      text-align: left;
-      margin: 0 0 50px;
-    }
+    font-size: 60px;
+    line-height: 90px;
+    margin: 0 auto 46px;
   }
   @media (min-width: 992px) {
-    & {
-      font-size: 45px;
-      line-height: 60px;
+
+  }
+}
+
+.header__subtitle {
+  font-family: $font_family2;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 35px;
+  color: #fff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  @media (min-width: 768px) {
+    font-size: 24px;
+    line-height: 45px;
+    margin-bottom: 48px;
+  }
+  @media (min-width: 992px) {
+    text-align: left;
+  }
+  .br1 {
+    @media (min-width: 992px) {
+      display: none;
     }
   }
-  @media (min-width: 1200px) {
-    & {
-      font-size: 67px;
-      line-height: 85px;
-      margin: 0 0 60px;
-    }
-  }
-  @media (min-width: 1440px) {
-    & {
-      font-size: 90px;
-      line-height: 120px;
+  .br2 {
+    @media (min-width: 992px) {
+      display: none;
     }
   }
 }

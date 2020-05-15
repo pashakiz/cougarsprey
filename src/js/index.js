@@ -41,7 +41,7 @@ $(function() {
             }
         });
 
-        //slider (Profile gallery) for mobile
+        //slider (Profile gallery)
         $('.owl-carousel.user-profile-slider').owlCarousel({
             items: 1,
             dots:true
