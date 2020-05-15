@@ -228,27 +228,32 @@
     }
   }
   &.compatibility_login {
+    padding: 0 24px;
+    @media (min-width: $user_list_item_breakpoint) {
+      padding: 0;
+    }
     .compatibility__img {
-      width: 36px;
-      height: 29px;
+      width: 44px;
+      height: 12px;
       @media (min-width: $user_list_item_breakpoint) {
-        width: 59px;
-        height: 54px;
+        width: 67px;
+        height: 19px;
       }
     }
     .compatibility__title {
-      margin-top: 8px;
-      font-size: 10px;
+      margin-top: 10px;
+      font-size: 11px;
       @media (min-width: $user_list_item_breakpoint) {
-        margin-top: 16px;
-        font-size: 16px;
+        margin-top: 13px;
+        font-size: 17px;
+        color: #fff;
       }
     }
     .compatibility__chart {
       +.compatibility__chart {
-        margin-left: 22px;
+        margin-left: 12px;
         @media (min-width: $user_list_item_breakpoint) {
-          margin-left: 71px;
+          margin-left: 42px;
         }
       }
     }

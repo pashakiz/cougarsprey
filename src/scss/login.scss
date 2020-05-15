@@ -2,20 +2,14 @@
   display: flex;
   position: relative;
   margin-top: 72px;
-  margin-bottom: 74px;
+  margin-bottom: 53px;
   justify-content: space-between;
   padding-left: 15px;
   @media (min-width: 348px) {
     justify-content: space-around;
   }
-  @media (min-width: 768px) {
-    margin-top: 195px;
-  }
   @media (min-width: 992px) {
-    margin-top: 295px;
-  }
-  @media (min-width: 1400px) {
-    margin-top: 195px;
+    margin-top: 100px;
   }
 }
 
