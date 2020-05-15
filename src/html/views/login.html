@@ -1,41 +1,50 @@
-<%= _.template(require('./../includes/header-login.html'))() %>
+<%= _.template(require('./../includes/header-main.html'))() %>
     <header class="header">
-        <div class="firstscreen bg01">
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="header__form">
-                                <form action="">
-                                    <h2 class="text-lg-uppercase text-center text-lg-left">Enter&nbsp;your&nbsp;<br>profile</h2>
-                                    <div class="form-group form-group_20">
-                                        <input class="form-control" type="text" placeholder="Email">
-                                    </div>
-                                    <div class="form-group form-group_30">
-                                        <input class="form-control" type="password" placeholder="Password">
-                                    </div>
-                                    <div class="form-group form-group_30">
-                                        <button class="btn btn_w100">Log in</button>
-                                    </div>
-                                </form>
+        <div class="firstscreen bg04">
+            <div class="firstscreen__img">
+                <img class="img-fluid" src="img/bg/desktop/bg-index-04.jpg" alt="CugarSprey">
+            </div>
+            <div class="firstscreen__inf">
+                <div class="header__form">
+                    <form action="">
+                        <div class="logo logo_main">
+                            <div class="logo__text1">Cougar</div>
+                            <div class="logo__text2">Sprey</div>
+                        </div>
+                        <h2 class="header-form-title text-uppercase text-center text-lg-left">Enter&nbsp;your<br>profile</h2>
+                        <div class="header__inputs">
+                            <div class="form-group form-group_20">
+                                <input class="form-control form-control_header" type="text" placeholder="Email">
+                            </div>
+                            <div class="form-group form-group_20">
+                                <input class="form-control form-control_header" type="password" placeholder="Password">
+                            </div>
+                            <div class="form-group form-group_30">
+                                <button class="btn btn_icon btn_header btn_w100">Sign Up<div class="btn__addon icon-chevron-right"></div></button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
+            </div>
         </div>
     </header>
-    <main class="main">
+    <main class="main main_login">
+        <h2 class="title-mark">Meet<br>Your Dream</h2>
         <div class="login-slider owl-carousel">
             <div class="user-list-item user-list-item_login">
                 <div class="user-list-item__pic">
-                    <img class="user-list-item__img img-fluid" src="img/photos/user-01.jpg" alt="">
-                    <a class="user-list-item__btn btn btn_w100" href="#">Claim Her</a>
+                    <img class="user-list-item__img img-fluid" src="img/photos/user01.jpg" alt="">
+                    <a class="user-list-item__btn btn btn_w100 d-none d-lg-block" href="#">Claim Her</a>
                 </div>
                 <div class="user-list-item__inf">
-                    <div class="user-list-item__title d-lg-flex justify-content-lg-between align-items-lg-center">
-                        <div class="user-list-item__name">Jennifer, 24</div>
-                        <div class="user-list-item__loc">New York (1000 km)</div>
+                    <a class="user-list-item__btn btn btn_w100 d-lg-none" href="#">Claim Her</a>
+                    <div class="user-list-item__title">
+                        <div class="d-lg-flex align-items-lg-center">
+                            <div class="user-list-item__name">Elena, 35</div>
+                            <div class="user-list-item__loc">California</div>
+                        </div>
                     </div>
+                    <div class="user-list-item__title2">Compatibility score: 15 000</div>
                     <div class="compatibility compatibility_login d-flex justify-content-sm-center justify-content-lg-start">
                         <div class="compatibility__chart">
                             <img class="compatibility__img" src="img/icons/compatibility1.svg" alt="">
@@ -54,14 +63,18 @@
             </div>
             <div class="user-list-item user-list-item_login">
                 <div class="user-list-item__pic">
-                    <img class="user-list-item__img img-fluid" src="img/photos/user-02.jpg" alt="">
-                    <a class="user-list-item__btn btn btn_w100" href="#">Claim Her</a>
+                    <img class="user-list-item__img img-fluid" src="img/photos/user02.jpg" alt="">
+                    <a class="user-list-item__btn btn btn_w100 d-none d-lg-block" href="#">Claim Her</a>
                 </div>
                 <div class="user-list-item__inf">
-                    <div class="user-list-item__title d-lg-flex justify-content-lg-between align-items-lg-center">
-                        <div class="user-list-item__name">Jennifer, 24</div>
-                        <div class="user-list-item__loc">New York (1000 km)</div>
+                    <a class="user-list-item__btn btn btn_w100 d-lg-none" href="#">Claim Her</a>
+                    <div class="user-list-item__title">
+                        <div class="d-lg-flex align-items-lg-center">
+                            <div class="user-list-item__name">Elena, 35</div>
+                            <div class="user-list-item__loc">New York (1000 km)</div>
+                        </div>
                     </div>
+                    <div class="user-list-item__title2">Compatibility score: 15 000</div>
                     <div class="compatibility compatibility_login d-flex justify-content-sm-center justify-content-lg-start">
                         <div class="compatibility__chart">
                             <img class="compatibility__img" src="img/icons/compatibility1.svg" alt="">
@@ -80,14 +93,18 @@
             </div>
             <div class="user-list-item user-list-item_login">
                 <div class="user-list-item__pic">
-                    <img class="user-list-item__img img-fluid" src="img/photos/user-03.jpg" alt="">
-                    <a class="user-list-item__btn btn btn_w100" href="#">Claim Her</a>
+                    <img class="user-list-item__img img-fluid" src="img/photos/user03.jpg" alt="">
+                    <a class="user-list-item__btn btn btn_w100 d-none d-lg-block" href="#">Claim Her</a>
                 </div>
                 <div class="user-list-item__inf">
-                    <div class="user-list-item__title d-lg-flex justify-content-lg-between align-items-lg-center">
-                        <div class="user-list-item__name">Jennifer, 24</div>
-                        <div class="user-list-item__loc">New York (1000 km)</div>
+                    <a class="user-list-item__btn btn btn_w100 d-lg-none" href="#">Claim Her</a>
+                    <div class="user-list-item__title">
+                        <div class="d-lg-flex align-items-lg-center">
+                            <div class="user-list-item__name">Jennifer, 35</div>
+                            <div class="user-list-item__loc">New York (1000 km)</div>
+                        </div>
                     </div>
+                    <div class="user-list-item__title2">Compatibility score: 15 000</div>
                     <div class="compatibility compatibility_login d-flex justify-content-sm-center justify-content-lg-start">
                         <div class="compatibility__chart">
                             <img class="compatibility__img" src="img/icons/compatibility1.svg" alt="">
@@ -106,14 +123,18 @@
             </div>
             <div class="user-list-item user-list-item_login">
                 <div class="user-list-item__pic">
-                    <img class="user-list-item__img img-fluid" src="img/photos/user-04.jpg" alt="">
-                    <a class="user-list-item__btn btn btn_w100" href="#">Claim Her</a>
+                    <img class="user-list-item__img img-fluid" src="img/photos/user04.jpg" alt="">
+                    <a class="user-list-item__btn btn btn_w100 d-none d-lg-block" href="#">Claim Her</a>
                 </div>
                 <div class="user-list-item__inf">
-                    <div class="user-list-item__title d-lg-flex justify-content-lg-between align-items-lg-center">
-                        <div class="user-list-item__name">Jennifer, 24</div>
-                        <div class="user-list-item__loc">New York (1000 km)</div>
+                    <a class="user-list-item__btn btn btn_w100 d-lg-none" href="#">Claim Her</a>
+                    <div class="user-list-item__title">
+                        <div class="d-lg-flex align-items-lg-center">
+                            <div class="user-list-item__name">Jennifer, 35</div>
+                            <div class="user-list-item__loc">California</div>
+                        </div>
                     </div>
+                    <div class="user-list-item__title2">Compatibility score: 15 000</div>
                     <div class="compatibility compatibility_login d-flex justify-content-sm-center justify-content-lg-start">
                         <div class="compatibility__chart">
                             <img class="compatibility__img" src="img/icons/compatibility1.svg" alt="">

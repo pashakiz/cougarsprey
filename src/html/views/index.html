@@ -1,26 +1,37 @@
 <%= _.template(require('./../includes/header-main.html'))() %>
+    <div id="page-preloader" class="preloader-no">
+        <div class="loader"></div>
+    </div>
     <header class="header">
         <div class="firstscreen bg01">
-
-                <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center">
-                    <div class="flex-grow-1 mr-auto-md">
+            <div class="firstscreen__img">
+                <img class="img-fluid" src="img/bg/desktop/bg-index-01.jpg" alt="CugarSprey">
+            </div>
+            <div class="firstscreen__inf">
+                <div class="header__form">
+                    <form action="">
                         <div class="logo logo_main">
-                            <div class="logo__img"></div>
-                            <div class="logo__text">Live&nbsp;your&nbsp; wet&nbsp;dream</div>
+                            <div class="logo__text1">Cougar</div>
+                            <div class="logo__text2">Sprey</div>
                         </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="header__titlebox">
-                                <div class="header__title">The&nbsp;best advisor&nbsp;in&nbsp;the dating&nbsp;world</div>
-                                <a class="btn" href="#">Unlock My Matches</a>
+                        <h2 class="header-form-title text-uppercase text-center text-lg-left">Signup&nbsp;access<br>your&nbsp;matches</h2>
+                        <div class="header__inputs">
+                            <div class="form-group form-group_20">
+                                <input class="form-control form-control_header" type="text" placeholder="Email">
+                            </div>
+                            <div class="form-group form-group_20">
+                                <input class="form-control form-control_header" type="password" placeholder="Password">
+                            </div>
+                            <div class="form-group form-group_30">
+                                <button class="btn btn_icon btn_header btn_w100">Sign Up<div class="btn__addon icon-chevron-right"></div></button>
+                            </div>
+                            <div class="form-group form-group_20 text-center text-lg-left">
+                                <a class="link1 link1_mb" href="login.html">Or Log In?</a>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
-
+            </div>
         </div>
     </header>
 

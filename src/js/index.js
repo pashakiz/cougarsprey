@@ -26,23 +26,17 @@ $(function() {
         $('.owl-carousel.login-slider').owlCarousel({
             loop:true,
             autoWidth:true,
-            items: 3,
+            items: 1,
             responsive:{
                 0:{
-                    margin:23,
+                    margin:21,
+                    items:1
+                },
+                992:{
+                    nav: true,
+                    navText: ['<div class="icon-arrow-left"></div>', '<div class="icon-arrow-right"></div>'],
+                    margin:80,
                     items:2
-                },
-                600:{
-                    margin:23,
-                    items:3
-                },
-                1400:{
-                    margin:91,
-                    items:3
-                },
-                1920:{
-                    margin:91,
-                    items:3
                 }
             }
         });
