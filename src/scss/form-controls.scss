@@ -52,6 +52,18 @@ body textarea:required:valid {
 }
 input.form-control {
   height: 58px;
+  &.form-control_header {
+    height: 47px;
+    padding: 0.875rem 1.625rem;
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+    @media (min-width: 1200px) {
+      height: 58px;
+      padding: 1.1875rem 1.75rem 1.1875rem;
+    }
+  }
 }
 textarea.form-control {
   border-radius: $textarea_border_radius;
@@ -343,6 +355,10 @@ textarea.form-control {
   color: #fff;
   background-color: $btn_bg_color;
   position: relative;
+  z-index: 10;
+  @media (min-width: 768px) {
+    width: auto;
+  }
   &:hover {
     color: #fff;
     background-color: $btn_hover_bg_color;
@@ -385,15 +401,17 @@ textarea.form-control {
       font-size: 14px;
       line-height: 16px;
     }
-  }
-  @media (min-width: 768px) {
-    & {
-      width: auto;
-    }
-  }
-  @media (min-width: 992px) {
-    & {
-      width: auto;
+    &.btn_header {
+      @media (min-width: 768px) {
+        padding: 1rem 1.3rem;
+        font-size: 13px;
+        line-height: 13px;
+      }
+      @media (min-width: 1200px) {
+        padding: 1.25rem 1.3rem;
+        font-size: 14px;
+        line-height: 16px;
+      }
     }
   }
 }
@@ -413,13 +431,24 @@ textarea.form-control {
   width: 47px;
   right: -1px;
   top: -1px;
+  z-index: 10;
   @media (min-width: 768px) {
     font-size: 16px;
     height: 58px;
     width: 58px;
   }
-  &::before {
-    //position: absolute;
-    //top: 50%;
+}
+.btn_header {
+  .btn__addon {
+    @media (min-width: 768px) {
+      font-size: 13px;
+      height: 47px;
+      width: 47px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 16px;
+      height: 58px;
+      width: 58px;
+    }
   }
 }

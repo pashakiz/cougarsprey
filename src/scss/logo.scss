@@ -11,9 +11,17 @@
   &.logo_main {
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 47px;
     @media (min-width: 768px) {
       flex-direction: row;
+      margin-bottom: 54px;
+    }
+    @media (min-width: 992px) {
       justify-content: flex-start;
+      margin-bottom: 25px;
+    }
+    @media (min-width: 1200px) {
+      margin-bottom: 54px;
     }
   }
 }
@@ -29,46 +37,13 @@
 }
 
 .logo_main {
-  margin: 180px 20px 40px;
-  @media (min-width: 768px) {
-    & {
-      margin: 40px 20px 40px 40px;
-    }
-  }
-  @media (min-width: 992px) {
-    & {
-      margin: 90px 20px 90px 90px;
-    }
-  }
-  @media (min-width: 1200px) {
-    & {
-      margin: 90px 20px 90px 90px;
-    }
-  }
-  .logo__img {
-    background-image: url('../img/icons/logo-white.svg');
-    margin-bottom: 20px;
-    @media (min-width: 768px) {
-      & {
-        background-image: url('../img/icons/logo-red.svg');
-        margin-bottom: 0;
-      }
-    }
-  }
-  .logo__text {
+  .logo__text2 {
     color: #fff;
-    font-size: 15px;
+  }
+  .logo__text1 {
+    margin: 0 0 15px 0;
     @media (min-width: 768px) {
-      & {
-        color: $logo_main_color;
-        font-size: 18px;
-      }
-    }
-    @media (min-width: 992px) {
-      & {
-        color: $logo_main_color;
-        font-size: 21px;
-      }
+      margin: 0 12px 0 0;
     }
   }
 }

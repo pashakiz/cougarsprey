@@ -150,10 +150,8 @@ a {
     color: $link1_hover_color;
   }
   @media (min-width: 768px) {
-    & {
-      font-size: 19px;
-      line-height: 26px;
-    }
+    font-size: 19px;
+    line-height: 26px;
   }
 }
 .preloader {
@@ -232,43 +230,6 @@ a {
 .index-content {
   background-color: #fff;
   padding-bottom: 10px;
-  &:before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 245px;
-    background-image: url('../img/bg/mobile/bg-main-down.svg');
-    background-size: 100%;
-    background-position: 100% 0;
-    background-repeat: no-repeat;
-    position: relative;
-    top: -4px;
-  }
-  @media (min-width: 768px) {
-    &:before {
-      background-image: url('../img/bg/desktop/bg-index-firtscreen-bottom.svg');
-    }
-  }
-  @media (min-width: 1055px) {
-    &:before {
-      height: 300px;
-    }
-  }
-  @media (min-width: 1200px) {
-    &:before {
-      height: 400px;
-    }
-  }
-  @media (min-width: 1440px) {
-    &:before {
-      height: 500px;
-    }
-  }
-  @media (min-width: 1920px) {
-    &:before {
-      height: 600px;
-    }
-  }
 }
 
 .index-content__title {

@@ -17,132 +17,106 @@
   }
 }
 
-.header__firstscreen {
+.firstscreen {
   width: 100%;
   height: auto;
-  background-repeat: no-repeat;
-  background-position: 100%;
-  background-size: cover;
-  &.bg01 {
-    background-position: 100%;
-  }
-  &.bg02 {
-    background-position: 100% 15%;
-  }
-  &.bg03 {
-    background-position: 100% 15%;
-  }
-  @media (min-width: 768px) {
-    & {
-      background-position: top right !important;
-      background-size: 54%;
-      position: relative;
-    }
-  }
-  &.bg01 {
-    background-image: url('../img/bg/mobile/bg-index-01.jpg');
-    @media (min-width: 768px) {
-      & {
-        background-image: url('../img/bg/desktop/bg-index-01.jpg');
-      }
-    }
-  }
-  &.bg02 {
-    background-image: url('../img/bg/mobile/bg-index-02.jpg');
-    @media (min-width: 768px) {
-      & {
-        background-image: url('../img/bg/desktop/bg-index-02.jpg');
-      }
-    }
-  }
-  &.bg03 {
-    background-image: url('../img/bg/mobile/bg-index-03.jpg');
-    @media (min-width: 768px) {
-      & {
-        background-image: url('../img/bg/desktop/bg-index-03.jpg');
-      }
-    }
-  }
-  &.bg-login-01 {
-    background-image: url('../img/bg/mobile/bg-index-01.jpg');
-    @media (min-width: 768px) {
-      & {
-        background-size: 53%;
-        background-image: url('../img/bg/desktop/bg-login-01.jpg');
-      }
-    }
-  }
-  &.bg-login-02 {
-    background-image: url('../img/bg/mobile/bg-index-02.jpg');
-    @media (min-width: 768px) {
-      & {
-        background-image: url('../img/bg/desktop/bg-login-02.jpg');
-      }
-    }
-  }
-  &.bg-login-03 {
-    background-image: url('../img/bg/mobile/bg-index-03.jpg');
-    @media (min-width: 768px) {
-      & {
-        background-image: url('../img/bg/desktop/bg-login-03.jpg');
-      }
-    }
-  }
-  &.bg-login-04 {
-    background-image: url('../img/bg/mobile/bg-index-02.jpg');
-    @media (min-width: 768px) {
-      & {
-        background-image: url('../img/bg/desktop/bg-login-04.jpg');
-      }
-    }
-  }
-  &.bg-login-05 {
-    background-image: url('../img/bg/mobile/bg-index-03.jpg');
-    @media (min-width: 768px) {
-      & {
-        background-image: url('../img/bg/desktop/bg-login-05.jpg');
-      }
-    }
-  }
-}
-
-.header__firstscreen-wrap {
+  display: flex;
   position: relative;
-  z-index: 10;
-  &:after {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  overflow: hidden;
+  padding-bottom: 95px;
+  @media (min-width: 992px) {
+    padding-bottom: 0;
+  }
+  &::before,
+  &::after {
     content: '';
     display: block;
-    width: 100%;
-    height: 180px;
-    background-image: url('../img/bg/mobile/bg-main-up.svg');
-    background-size: 100% 100%;
-    background-position: 0 100%;
-    background-repeat: no-repeat;
     position: absolute;
-    bottom: -2px;
-    z-index: -10;
-  }
-  @media (min-width: 768px) {
-    & {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
+    width: 720px;
+    height: 270px;
+    background-color: #fff;
+    bottom: -280px;
+    @media (min-width: 510px) {
+      bottom: -225px;
     }
-    &:after {
+    @media (min-width: 698px) {
+      bottom: -180px;
+    }
+    @media (min-width: 768px) {
+      bottom: -188px;
+    }
+    @media (min-width: 820px) {
+      bottom: -140px;
+    }
+    @media (min-width: 950px) {
+      bottom: -140px;
+    }
+    @media (min-width: 966px) {
+      height: 300px;
+    }
+    @media (min-width: 992px) {
       content: none;
       display: none;
     }
   }
-}
-
-.header__bgimg {
-  display: none;
-  @media (min-width: 768px) {
-    display: inline;
+  &::before {
+    left: -125px;
+    transform: rotate(30deg);
+  }
+  &::after {
+    right: -125px;
+    transform: rotate(-30deg);
+  }
+  .firstscreen__img {
+    display: none;
+    width: 40%;
+    overflow: hidden;
+    position: relative;
+    @media (min-width: 992px) {
+      display: block;
+    }
+  }
+  &.bg01 {
+    background-image: url('../img/bg/mobile/bg-index-01.jpg');
+  }
+  &.bg02 {
+    background-image: url('../img/bg/mobile/bg-index-02.jpg');
+    background-position-y: 50%;
+  }
+  &.bg03 {
+    background-image: url('../img/bg/mobile/bg-index-03.jpg');
+    background-position-y: 50%;
+  }
+  &.bg04 {
+    background-image: url('../img/bg/mobile/bg-index-04.jpg');
+    background-position-y: 50%;
+  }
+  &.bg05 {
+    background-image: url('../img/bg/mobile/bg-index-05.jpg');
+  }
+  &.bg01, &.bg02, &.bg03, &.bg04, &.bg05 {
+    @media (min-width: 992px) {
+      background-image: none;
+    }
+  }
+  .firstscreen__inf {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 67px 15px 0;
+    @media (min-width: 992px) {
+      padding: 0;
+      width: 60%;
+      background-color: #000;
+      background-image: url('../img/icons/chili.svg');
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 60%;
+    }
   }
 }
 
@@ -158,16 +132,22 @@
 }
 
 .header__form {
-  padding-top: 48px;
+  @media (min-width: 1200px) {
+    margin-left: -50px;
+  }
+  @media (min-width: 1500px) {
+    margin-left: -250px;
+  }
+}
+
+.header__inputs {
   @media (min-width: 768px) {
-    width: 411px;
-    padding-top: 15px;
+    width: 369px;
+    margin: 0 auto;
   }
-  @media (min-width: 992px) {
-    padding-top: 30px;
-  }
-  @media (min-width: 1920px) {
-    padding-top: 131px;
+  @media (min-width: 1200px) {
+    width: 369px;
+    margin: 0;
   }
 }
 
